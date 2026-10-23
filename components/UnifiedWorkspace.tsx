@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, Stethoscope, Bot, ShieldCheck, Database, ArrowRight } from "lucide-react";
+import { Calendar, Stethoscope, Activity, ShieldCheck, Database, ArrowRight } from "lucide-react";
 
 export function UnifiedWorkspace() {
   const steps = [
@@ -18,9 +18,9 @@ export function UnifiedWorkspace() {
     },
     {
       step: "03",
-      title: "AI Synthesis",
-      icon: Bot,
-      description: "Copilot analyzes dictation and stages typed proposals (medication changes, labs, artifact diffs).",
+      title: "Rule Synthesis",
+      icon: Activity,
+      description: "Deterministic regex rules parse dictation to stage typed proposals (medication changes, labs, artifact diffs).",
     },
     {
       step: "04",

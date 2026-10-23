@@ -18,9 +18,9 @@ export function Philosophy() {
       title: "Physician Remains Final Authority",
       badge: "CLINICAL SAFETY",
       description:
-        "Autonomous AI writes in electronic health records pose severe clinical risk. Agent-D implements an approval-first proposal gate: every prescription adjustment, clinical problem change, or follow-up ticket requires explicit physician signature.",
+        "Autonomous software writes in electronic health records pose severe clinical risk. Agent-D implements an approval-first proposal gate: every prescription adjustment, clinical problem change, or follow-up ticket requires explicit physician signature.",
       icon: ShieldCheck,
-      highlight: "Doctor in control: AI proposes, Physician approves",
+      highlight: "Doctor in control: System stages, Physician approves",
     },
     {
       number: "03",

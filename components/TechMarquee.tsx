@@ -1,14 +1,14 @@
 "use client";
 
-import { ShieldCheck, Lock, Terminal, Bot, Calendar, Stethoscope, FileText, Cpu, Kanban, Database } from "lucide-react";
+import { ShieldCheck, Lock, Terminal, Activity, Calendar, Stethoscope, FileText, Cpu, Kanban, Database } from "lucide-react";
 
 export function TechMarquee() {
   const items = [
     { label: "Hardware-Bound AES-256-GCM Vault", icon: Lock },
-    { label: "Zero Cloud PII (PT-XXXX Alias Scrubber)", icon: ShieldCheck },
+    { label: "Zero Cloud Egress & Zero AI", icon: ShieldCheck },
     { label: "Loopback http://127.0.0.1:5050", icon: Terminal },
-    { label: "Doctor-in-the-Loop Proposal Gate", icon: Bot },
-    { label: "100% Local Ollama (127.0.0.1:11434)", icon: Cpu },
+    { label: "Doctor-in-the-Loop Proposal Gate", icon: Activity },
+    { label: "100% Deterministic Clinical Architecture", icon: Cpu },
     { label: "7-Column Clinical Calendar & Agenda", icon: Calendar },
     { label: "Standalone Consultations & Live Encounters", icon: Stethoscope },
     { label: "Living Patient Context Artifacts & Diff Snapshots", icon: FileText },

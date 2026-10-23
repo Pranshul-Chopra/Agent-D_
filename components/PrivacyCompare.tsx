@@ -15,9 +15,9 @@ export function PrivacyCompare() {
       cloud: "Vendor-managed keys with cloud provider insider access",
     },
     {
-      feature: "AI Inference & Egress Sovereignty",
-      agentD: "100% On-Device Ollama (127.0.0.1:11434). Zero cloud egress, zero network transmission",
-      cloud: "Cleartext clinical records transmitted over the public internet to commercial model APIs",
+      feature: "Data Transmission & Sovereignty",
+      agentD: "100% Deterministic Local Processing. Zero cloud egress, zero third-party data processors",
+      cloud: "Cleartext clinical records transmitted over the public internet to commercial cloud servers and model APIs",
     },
     {
       feature: "Record Modification Safety",

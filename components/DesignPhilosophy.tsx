@@ -21,7 +21,7 @@ export function DesignPhilosophy() {
     },
     {
       title: "High-Density Clinical Architecture",
-      description: "Split-view layout designed to present patient artifacts, live agenda, and conversational copilot without scrolling.",
+      description: "Unified layout designed to present patient artifacts, live agenda, encounters, and follow-ups without clutter.",
       tag: "Zero-Clutter Density",
     },
   ];

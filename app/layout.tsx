@@ -3,17 +3,18 @@ import "./globals.css";
 import { SITE_CONFIG } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Agent-D — Conversational Clinical Platform for Physicians",
+  title: "Agent-D — Privacy-First Deterministic Clinical Workstation for Physicians",
   description:
-    "100% on-device clinical intelligence powered by hardware-bound AES-256-GCM vault storage, doctor-in-the-loop proposal verification, and zero cloud PII leakage.",
+    "100% local deterministic clinical workstation powered by hardware-bound AES-256-GCM vault storage, patient context artifacts, doctor-in-the-loop proposals, and zero cloud network egress.",
   keywords: [
-    "clinical copilot",
+    "clinical workstation",
     "physician workspace",
     "doctor desktop",
     "local-first EHR",
     "AES-256 vault",
-    "clinical decision support",
-    "zero cloud PII",
+    "deterministic clinical software",
+    "zero cloud egress",
+    "patient context artifacts",
     "Agent-D",
   ],
   authors: [{ name: SITE_CONFIG.creator }],

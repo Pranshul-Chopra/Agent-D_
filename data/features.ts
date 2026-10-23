@@ -5,24 +5,24 @@ export interface FeatureItem {
   description: string;
   highlight: string;
   iconName: string;
-  category: "copilot" | "safety" | "clinical" | "security";
+  category: "dashboard" | "safety" | "clinical" | "security";
   bullets: string[];
 }
 
 export const CLINICAL_FEATURES: FeatureItem[] = [
   {
-    id: "copilot",
-    title: "Conversational Clinical Copilot & In-View Scoping",
-    badge: "DECISION SUPPORT",
+    id: "practice-dashboard",
+    title: "Unified Practice Dashboard & Schedule Hub",
+    badge: "CLINICAL DISPATCH",
     description:
-      "A dual-pane clinical workbench. On the left, a real-time conversational intelligence agent streams clinical synthesis; on the right, living patient artifacts and practice context stay pinned in view with in-view chart scoping.",
-    highlight: "Real-time SSE streaming with live dynamic SQLite context injection",
-    iconName: "Bot",
-    category: "copilot",
+      "A centralized practice command hub for the attending physician. Displays active patient metrics, today's schedule agenda, instant encounter launching, and next-patient clinical pointers.",
+    highlight: "Sub-second live aggregation of active patients, consults, and follow-ups",
+    iconName: "Activity",
+    category: "dashboard",
     bullets: [
-      "In-view patient context switcher in header: toggle between General Practice and individual charts (PT-XXXX)",
-      "Ask natural questions like 'What is on my dashboard today?' or 'Summarize recent HbA1c trends'",
-      "Floating slash (/) command palette with keyboard tabbing for rapid dictation (/consultation, /note, /ticket)",
+      "Real-time patient census, unreviewed artifacts tally, and pending follow-up counts",
+      "One-click encounter launcher to begin consultations directly from today's schedule",
+      "Zero-latency desktop response times (< 50ms) across all practice operations",
     ],
   },
   {
@@ -30,14 +30,14 @@ export const CLINICAL_FEATURES: FeatureItem[] = [
     title: "Doctor-in-the-Loop Proposal Safety Gate",
     badge: "SAFETY PROTOCOL",
     description:
-      "The AI never mutates clinical records autonomously. Every suggestion produces a typed, visual diff proposal requiring explicit physician confirmation before committing to the vault.",
-    highlight: "Zero autonomous database writes — physician remains final authority",
+      "The workstation never mutates clinical records autonomously. Deterministic rule-based extraction parses encounter notes into typed visual diff proposals requiring explicit physician approval.",
+    highlight: "Zero autonomous database writes — physician remains sole clinical authority",
     iconName: "ShieldCheck",
     category: "safety",
     bullets: [
       "Visual before/after diffs for medication updates, problem lists, and allergies",
-      "One-click Approve, Edit, or Reject directly in the chat stream",
-      "Immutable audit log records every approved change with doctor timestamp",
+      "One-click [Approve & Commit] or [Reject] with full audit trail",
+      "Deterministic extraction with zero probabilistic hallucinations",
     ],
   },
   {
@@ -60,14 +60,14 @@ export const CLINICAL_FEATURES: FeatureItem[] = [
     title: "Standalone Consultations & Live Encounters",
     badge: "PATIENT ENCOUNTERS",
     description:
-      "A specialized encounters module decoupled from the dashboard to conduct patient consultations, start live encounters, record encrypted clinical dictation notes, and jump into Copilot context.",
+      "A specialized encounters module decoupled from the dashboard to conduct patient consultations, start live encounters, record encrypted clinical dictation notes, and stage differential proposals.",
     highlight: "End-to-end encounter lifecycle from check-in to notes archive",
     iconName: "Stethoscope",
     category: "clinical",
     bullets: [
       "Filter by status: Scheduled, In Progress, Completed, Cancelled",
       "Add structured encounter notes saved directly into AES-256 encrypted logs",
-      "One-click 'Open in Copilot' instantly primes chat with patient history",
+      "Automatic generation of prescription and follow-up lab proposals upon concluding encounter",
     ],
   },
   {
@@ -86,18 +86,18 @@ export const CLINICAL_FEATURES: FeatureItem[] = [
     ],
   },
   {
-    id: "local-ollama",
-    title: "100% On-Device Sovereign Ollama Inference",
-    badge: "AIR-GAPPED SOVEREIGNTY",
+    id: "zero-ai-egress",
+    title: "100% Deterministic Architecture & Zero Network Egress",
+    badge: "PRIVACY SOVEREIGNTY",
     description:
-      "Run state-of-the-art open clinical language models locally via Ollama strictly bound to loopback 127.0.0.1:11434, backed by embedded rule-based clinical synthesis with zero external network calls.",
-    highlight: "Zero cloud keys, zero remote transmission, zero cloud API reliance",
-    iconName: "Cpu",
+      "Pure deterministic clinical workstation with zero generative AI, zero external model calls, and zero cloud network egress. All data stays strictly on the physician's computer.",
+    highlight: "Zero cloud API keys, zero third-party data processors, zero DPDP liability",
+    iconName: "ShieldCheck",
     category: "security",
     bullets: [
-      "Pluggable BaseLLMProvider interface with hardened loopback OllamaProvider",
-      "Strict loopback enforcement (127.0.0.1:11434) rejecting non-local addresses",
-      "Automatic graceful fallback to embedded rule-based clinical synthesis",
+      "Eliminated all external cloud models, API keys, and background neural pipelines",
+      "Strict loopback IPC binding (127.0.0.1:5050) with 32-byte dynamic bearer token",
+      "Full compliance with Indian IT Act 2000 Section 43A and DPDP Act 2023",
     ],
   },
   {
@@ -127,7 +127,7 @@ export const CLINICAL_FEATURES: FeatureItem[] = [
     bullets: [
       "Drag-and-drop state transitions with priority tags (Urgent, High, Med, Low)",
       "Direct link to associated patient chart alias on every ticket",
-      "Integrated with Copilot proposals for automatic post-consult ticket creation",
+      "Integrated with deterministic post-consultation proposals for instant ticket creation",
     ],
   },
 ];

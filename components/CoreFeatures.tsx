@@ -1,11 +1,11 @@
 "use client";
 
 import { CLINICAL_FEATURES } from "@/data/features";
-import { Bot, ShieldCheck, Calendar, Stethoscope, FileText, Key, Lock, Kanban } from "lucide-react";
+import { Activity, ShieldCheck, Calendar, Stethoscope, FileText, Key, Lock, Kanban } from "lucide-react";
 
 export function CoreFeatures() {
   const iconMap: Record<string, any> = {
-    Bot,
+    Activity,
     ShieldCheck,
     Calendar,
     Stethoscope,

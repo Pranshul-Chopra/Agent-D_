@@ -22,7 +22,7 @@ export function FinalCTA() {
           </h2>
 
           <p className="text-sm sm:text-base text-blue-100 max-w-xl mx-auto leading-relaxed">
-            Experience conversational clinical intelligence with zero cloud telemetry, hardware-bound AES-256-GCM vault security, and doctor-in-the-loop safety.
+            Experience deterministic clinical productivity with zero cloud telemetry, hardware-bound AES-256-GCM vault security, and doctor-in-the-loop safety.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">

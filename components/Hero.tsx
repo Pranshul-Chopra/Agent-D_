@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Download, ShieldCheck, Stethoscope, Terminal, ArrowRight, Lock, Calendar, Bot, FileText, CheckCircle2 } from "lucide-react";
+import { Download, ShieldCheck, Stethoscope, Terminal, ArrowRight, Lock, Calendar, Activity, FileText, CheckCircle2 } from "lucide-react";
 import { SITE_CONFIG } from "@/config/site";
 
 export function Hero() {
-  const [activePreview, setActivePreview] = useState<"copilot" | "calendar" | "consultations" | "artifacts" | "proposals">("copilot");
+  const [activePreview, setActivePreview] = useState<"dashboard" | "calendar" | "consultations" | "artifacts" | "proposals">("dashboard");
 
   const previewTabs = [
-    { id: "copilot", label: "Conversational Copilot", icon: Bot },
+    { id: "dashboard", label: "Practice Dashboard", icon: Activity },
     { id: "calendar", label: "Practice Calendar", icon: Calendar },
     { id: "consultations", label: "Live Encounters", icon: Stethoscope },
     { id: "artifacts", label: "Living Artifacts", icon: FileText },
@@ -34,15 +34,15 @@ export function Hero() {
       {/* Main Headline */}
       <div className="text-center max-w-4xl mx-auto mb-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
-          The Conversational-First Clinical Workspace for{" "}
+          The Privacy-First Clinical Workspace for{" "}
           <span className="text-[#2563EB] underline decoration-blue-200 decoration-wavy underline-offset-8">
             Attending Physicians
           </span>
         </h1>
         <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          100% on-device clinic intelligence. Protected by a hardware-bound{" "}
-          <strong className="text-slate-800 font-semibold">AES-256-GCM vault</strong>, 100% on-device{" "}
-          <strong className="text-slate-800 font-semibold">sovereign Ollama AI</strong>, doctor-in-the-loop proposals, and{" "}
+          100% on-device clinical workstation. Protected by a hardware-bound{" "}
+          <strong className="text-slate-800 font-semibold">AES-256-GCM vault</strong>, deterministic{" "}
+          <strong className="text-slate-800 font-semibold">rule-based clinical extraction</strong>, doctor-in-the-loop proposals, and{" "}
           <strong className="text-slate-800 font-semibold">zero network egress</strong>.
         </p>
       </div>
@@ -70,7 +70,7 @@ export function Hero() {
       <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-600 mb-12 font-medium">
         <div className="flex items-center gap-1.5">
           <ShieldCheck className="w-4 h-4 text-emerald-600" />
-          <span>100% Local Ollama (127.0.0.1:11434)</span>
+          <span>100% Deterministic (Zero AI)</span>
         </div>
         <div className="flex items-center gap-1.5">
           <Lock className="w-4 h-4 text-[#2563EB]" />
@@ -93,14 +93,8 @@ export function Hero() {
             <span className="ml-2 font-mono text-xs font-semibold text-slate-700">Agent-D {SITE_CONFIG.version} · Sovereign Clinical Vault</span>
           </div>
           <span className="text-[11px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-            Air-Gapped Local AI · 127.0.0.1:5050
+            Deterministic Workstation · 127.0.0.1:5050
           </span>
-        </div>
-
-        {/* Demo Mode Guardrail Banner */}
-        <div className="bg-amber-500/10 border-b border-amber-500/20 px-3 py-1.5 text-center text-[11px] font-mono text-amber-800 font-semibold flex items-center justify-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-          <span>Demo only: no real patient data — pending legal review</span>
         </div>
 
         {/* Tab Switcher */}
@@ -127,24 +121,44 @@ export function Hero() {
 
         {/* Mockup Content Panels */}
         <div className="p-6 bg-slate-50 min-h-[380px] flex flex-col justify-center">
-          {activePreview === "copilot" && (
+          {activePreview === "dashboard" && (
             <div className="space-y-4">
               <div className="flex items-center justify-between p-3 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-900">
-                <span className="font-semibold">Scoped Patient Chart: PT-1042 (De-identified)</span>
-                <span className="font-mono text-blue-700">Slash (/) Commands Active</span>
+                <span className="font-semibold">Practice Census: 28 Active Patients · AES-256-GCM Vault Locked</span>
+                <span className="font-mono text-blue-700 font-medium">Sub-50ms Local REST</span>
               </div>
-              <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm space-y-2">
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Doctor Query</div>
-                <div className="text-sm font-medium text-slate-900">"Brief me on today's encounters and check for pending HbA1c lab orders."</div>
+              <div className="grid grid-cols-3 gap-3">
+                <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+                  <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Today's Visits</div>
+                  <div className="text-xl font-bold text-slate-900 mt-1">4 Consultations</div>
+                  <div className="text-[11px] text-emerald-600 font-medium mt-0.5">1 Completed · 1 In Progress</div>
+                </div>
+                <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+                  <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Unreviewed Charts</div>
+                  <div className="text-xl font-bold text-slate-900 mt-1">2 Artifacts</div>
+                  <div className="text-[11px] text-blue-600 font-medium mt-0.5">Staged changes pending review</div>
+                </div>
+                <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+                  <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Follow-up Board</div>
+                  <div className="text-xl font-bold text-slate-900 mt-1">3 Open Tickets</div>
+                  <div className="text-[11px] text-amber-600 font-medium mt-0.5">1 Urgent lab follow-up</div>
+                </div>
               </div>
               <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm space-y-2 border-l-4 border-l-[#2563EB]">
-                <div className="text-xs font-semibold text-[#2563EB] flex items-center gap-1.5">
-                  <Bot className="w-3.5 h-3.5" />
-                  <span>Agent-D Copilot Response</span>
+                <div className="text-xs font-semibold text-[#2563EB] flex items-center justify-between">
+                  <span className="flex items-center gap-1.5">
+                    <Activity className="w-3.5 h-3.5" />
+                    <span>Next Patient Encounter Pointer</span>
+                  </span>
+                  <span className="font-mono text-[11px] text-slate-500">Scheduled: 10:00 AM</span>
                 </div>
-                <div className="text-xs text-slate-700 leading-relaxed space-y-1">
-                  <p>• <strong>Scheduled Encounters:</strong> 4 consultations on agenda today. Next: Patient PT-7821 at 09:30 AM (Type 2 Diabetes follow-up).</p>
-                  <p>• <strong>Pending Laboratory:</strong> 3-month HbA1c for PT-1042 overdue since yesterday. Staged follow-up ticket proposed below.</p>
+                <div className="text-xs text-slate-700 leading-relaxed flex items-center justify-between pt-1">
+                  <div>
+                    <span className="font-bold text-slate-900">Patient PT-1042</span> · Essential Hypertension &amp; Type 2 Diabetes follow-up (3-month review).
+                  </div>
+                  <button className="px-3 py-1.5 rounded-lg bg-[#2563EB] text-white text-xs font-semibold shadow-xs hover:bg-[#1D4ED8]">
+                    Start Encounter
+                  </button>
                 </div>
               </div>
             </div>

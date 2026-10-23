@@ -5,22 +5,18 @@ import { RELEASE_HISTORY } from "@/data/releases";
 
 export function CurrentState() {
   const shipped = [
-    "100% On-Device Sovereign Ollama Engine (127.0.0.1:11434 loopback only)",
-    "Permanent Elimination of Cloud Egress & Cloud Key Storage (IT Act 2000 & DPDP Act compliance)",
-    "Embedded Rule-Based Clinical Synthesis fallback for zero-downtime offline operation",
-    "Persistent Amber Demo Guardrail Banner across UI ('Demo only: no real patient data')",
-    "Network Audit Compliance: Zero background update polling, zero third-party CDNs or telemetry",
-    "In-View Patient Scoping in Copilot Header (General Practice vs PT-XXXX charts)",
+    "100% Deterministic Physician Workstation Architecture (Zero AI, Zero Hallucinations)",
+    "Permanent Elimination of Cloud Egress, Cloud Key Vaults & LLM Telemetry (IT Act 2000 & DPDP Act compliance)",
+    "Deterministic Rule-Based Clinical Extraction for automated proposal generation from dictation",
+    "Network Audit Compliance: Zero background update polling, zero third-party CDNs, zero telemetry",
     "Dedicated Patient Chart Directory & In-Header Switcher in Artifacts Studio",
-    "Real-Time Dynamic Context Synchronization across SQLite, Copilot & Artifacts",
     "Hardware-bound AES-256-GCM Local Vault (%LOCALAPPDATA%\\AgentD\\context.db)",
     "Cryptographic Alias Scrubber replacing legal names with PT-XXXX tokens",
-    "Loopback architecture binding strictly to http://127.0.0.1:5050",
+    "Loopback architecture binding strictly to http://127.0.0.1:5050 with 32-byte bearer token",
     "Doctor-in-Control Proposal Safety Gate with visual diff inspections",
-    "Conversational Clinical Copilot with SSE token streaming & slash commands",
     "7-Column Interactive Practice Calendar with priority placement on dashboard",
-    "Standalone Consultations & Live Encounters module for clinical dictation",
-    "Living Patient Context Artifacts with immutable version history",
+    "Standalone Consultations & Live Encounters module with encrypted notes",
+    "Living Patient Context Artifacts with immutable version history & visual diffs",
     "Clinical Follow-ups Kanban Board for lab orders and recall tracking",
     "Smooth One-Click Setup Installer & Standalone Portable Executable",
     "Hardened GitHub Actions CI/CD with atomic releases and UPX bypass",
@@ -28,8 +24,8 @@ export function CurrentState() {
 
   const upcomingMilestone6 = [
     "Encrypted Database Backup & Restore Engine (.agentd_backup archive export/import)",
-    "LLM Call Inspector & Zero-PII Real-Time Audit Viewer",
     "Automated Pre-Visit 3-Bullet Briefing Engine & Windows Notifications",
+    "Audit Trail Export & PDF Encrypted Summary Reports",
   ];
 
   return (

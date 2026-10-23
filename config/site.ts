@@ -7,7 +7,7 @@
 export const SITE_CONFIG = {
   // Current Release Info
   version: "v0.5.0",
-  versionLabel: "v0.5.0 Sovereign Air-Gapped AI & Local Ollama Workstation",
+  versionLabel: "v0.5.0 Deterministic Clinical Desktop Workstation",
   releaseDate: "October 2026",
   platform: "Windows 10 / 11 (x64)",
 
@@ -31,7 +31,7 @@ export const SITE_CONFIG = {
   // Metadata & Site Details
   siteUrl: "https://agent-d.vercel.app",
   productName: "Agent-D",
-  tagline: "Conversational-First Clinical Workspace for Attending Physicians",
+  tagline: "Privacy-First Deterministic Clinical Desktop Workstation for Attending Physicians",
   creator: "Pranshul Chopra",
 } as const;
 

@@ -20,7 +20,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
     name: "Headless Clinical Engine",
     description:
       "A local Python 3.13 Flask service compiled into a standalone headless executable via PyInstaller. Binds strictly to 127.0.0.1 loopback.",
-    technologies: ["Python 3.13", "Flask 3", "PyInstaller 6", "SSE Streaming"],
+    technologies: ["Python 3.13", "Flask 3", "PyInstaller 6", "Loopback REST"],
     metrics: ["Zero public interfaces", "Dynamic 32-byte bearer token", "Sub-20ms local REST latency"],
   },
   {
@@ -33,18 +33,18 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
   },
   {
     layer: "04",
-    name: "De-Identification Perimeter",
+    name: "De-Identification & Alias Perimeter",
     description:
-      "Local cryptographic alias scrubber that substitutes legal patient names with tokens (e.g. PT-1042) prior to external model synthesis.",
-    technologies: ["Regex Scrubber", "Alias Table", "Audit Logger", "Memory-only mapping"],
+      "Local cryptographic alias mapper that assigns non-colliding tokens (e.g. PT-1042) to protect patient identity across all views and local storage.",
+    technologies: ["Cryptographic Alias Table", "PBKDF2 Salt", "Audit Logger", "Decoupled Identifier Mapping"],
     metrics: ["Zero Cloud PII", "Deterministic reversibility locally", "Tamper-evident audit trail"],
   },
   {
     layer: "05",
-    name: "Sovereign Local LLM Engine",
+    name: "Deterministic Clinical Synthesis",
     description:
-      "Pluggable on-device inference coordinator running local models via Ollama strictly over 127.0.0.1:11434 loopback, backed by embedded rule-based clinical synthesis with zero external network egress.",
-    technologies: ["Ollama (Loopback)", "Llama 3.2 / Qwen 2.5", "Local Rule Engine", "Zero Egress Choke"],
-    metrics: ["100% On-device processing", "127.0.0.1:11434 loopback only", "Air-gapped clinical fallback"],
+      "Fast rule-based extraction engine in Python that parses doctor dictation notes with regular expressions to synthesize typed medication, diagnosis, and lab tickets for physician sign-off.",
+    technologies: ["Regex Clinical Parser", "Deterministic Rules", "Proposal Staging", "Zero Egress Choke"],
+    metrics: ["100% Deterministic execution", "Sub-10ms parsing speed", "Zero hallucination risk"],
   },
 ];

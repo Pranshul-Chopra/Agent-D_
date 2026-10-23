@@ -23,7 +23,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-slate-500 max-w-sm">
-              Conversational-First Clinical Workspace for Attending Physicians. 100% local machine sovereignty.
+              Deterministic Clinical Desktop Workstation for Attending Physicians. 100% local machine sovereignty.
             </p>
           </div>
 
