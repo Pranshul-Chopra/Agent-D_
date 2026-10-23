@@ -41,10 +41,10 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
   },
   {
     layer: "05",
-    name: "Multi-Key LLM Gateway",
+    name: "Sovereign Local LLM Engine",
     description:
-      "In-process inference coordinator managing doctor-provided Gemini API keys with round-robin rotation, automatic 60-second cooldown on rate limits, and local fallback.",
-    technologies: ["google-genai", "Gemini 2.5 Flash", "Round-Robin Pool", "Local Rule Engine"],
-    metrics: ["Automatic 60s cooldown failover", "Zero single-point-of-failure", "Encrypted key storage"],
+      "Pluggable on-device inference coordinator running local models via Ollama strictly over 127.0.0.1:11434 loopback, backed by embedded rule-based clinical synthesis with zero external network egress.",
+    technologies: ["Ollama (Loopback)", "Llama 3.2 / Qwen 2.5", "Local Rule Engine", "Zero Egress Choke"],
+    metrics: ["100% On-device processing", "127.0.0.1:11434 loopback only", "Air-gapped clinical fallback"],
   },
 ];

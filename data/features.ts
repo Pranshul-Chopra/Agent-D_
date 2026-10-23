@@ -86,18 +86,18 @@ export const CLINICAL_FEATURES: FeatureItem[] = [
     ],
   },
   {
-    id: "multi-key",
-    title: "Multi-Key Gemini Inference Gateway",
-    badge: "RELIABILITY",
+    id: "local-ollama",
+    title: "100% On-Device Sovereign Ollama Inference",
+    badge: "AIR-GAPPED SOVEREIGNTY",
     description:
-      "Store multiple physician-supplied Gemini API keys with automatic round-robin rotation, 60-second cooldown failover on rate limits, and fallback to local clinical synthesis.",
-    highlight: "Zero downtime during peak clinic consultation hours",
-    iconName: "Key",
+      "Run state-of-the-art open clinical language models locally via Ollama strictly bound to loopback 127.0.0.1:11434, backed by embedded rule-based clinical synthesis with zero external network calls.",
+    highlight: "Zero cloud keys, zero remote transmission, zero cloud API reliance",
+    iconName: "Cpu",
     category: "security",
     bullets: [
-      "Add up to N Gemini API keys encrypted at rest with machine-bound PBKDF2",
-      "Automatic failover to next healthy key upon receiving HTTP 429 or 503",
-      "Transparent cooldown countdown with manual reset controls in Settings",
+      "Pluggable BaseLLMProvider interface with hardened loopback OllamaProvider",
+      "Strict loopback enforcement (127.0.0.1:11434) rejecting non-local addresses",
+      "Automatic graceful fallback to embedded rule-based clinical synthesis",
     ],
   },
   {

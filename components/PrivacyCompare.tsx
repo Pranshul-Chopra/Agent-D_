@@ -15,9 +15,9 @@ export function PrivacyCompare() {
       cloud: "Vendor-managed keys with cloud provider insider access",
     },
     {
-      feature: "AI Inference & PII Privacy",
-      agentD: "Zero Cloud PII. Legal names replaced with tokens (PT-1042)",
-      cloud: "Cleartext clinical records transmitted to model APIs",
+      feature: "AI Inference & Egress Sovereignty",
+      agentD: "100% On-Device Ollama (127.0.0.1:11434). Zero cloud egress, zero network transmission",
+      cloud: "Cleartext clinical records transmitted over the public internet to commercial model APIs",
     },
     {
       feature: "Record Modification Safety",

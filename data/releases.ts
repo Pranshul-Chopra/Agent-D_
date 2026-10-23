@@ -9,10 +9,25 @@ export interface ReleaseLog {
 
 export const RELEASE_HISTORY: ReleaseLog[] = [
   {
+    version: "v0.5.0",
+    codename: "Sovereign Air-Gapped AI & Local Ollama",
+    date: "October 2026",
+    badge: "CURRENT RELEASE",
+    summary:
+      "Eliminates cloud AI legal and regulatory exposure under the IT Act 2000 and DPDP Act 2023 with a 100% On-Device Sovereign Architecture powered by local Ollama on loopback, hardened prompt boundaries, and persistent pre-clinical demo guardrails.",
+    highlights: [
+      "100% On-Device Sovereign Architecture: Pluggable BaseLLMProvider interface with hardened OllamaProvider bound strictly to loopback (127.0.0.1:11434)",
+      "Zero Cloud Egress: Cloud Gemini REST clients, cloud key vaults, key rotation, and /keys endpoints permanently eliminated from runtime",
+      "Embedded Air-Gapped Clinical Synthesis: Graceful automatic fallback ensuring uninterrupted consultation briefs and ticket generation without external models",
+      "Network Audit & Compliance: Disabled automatic background updater polling; zero external CDNs, Google Fonts, or telemetry beacons",
+      "Persistent Demo Guardrail: Prominent amber warning banner across UI ('Demo only: no real patient data — pending legal review')",
+    ],
+  },
+  {
     version: "v0.4.0",
     codename: "In-View Context Scoping & CI/CD Hardening",
     date: "October 2026",
-    badge: "CURRENT RELEASE",
+    badge: "PREVIOUS RELEASE",
     summary:
       "Major contextual workflow evolution shifting patient scoping directly into Copilot and Artifacts Studio, real-time dynamic SQLite context synchronization across all modules, and hardened CI/CD release automation.",
     highlights: [

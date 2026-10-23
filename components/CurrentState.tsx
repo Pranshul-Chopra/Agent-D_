@@ -5,6 +5,11 @@ import { RELEASE_HISTORY } from "@/data/releases";
 
 export function CurrentState() {
   const shipped = [
+    "100% On-Device Sovereign Ollama Engine (127.0.0.1:11434 loopback only)",
+    "Permanent Elimination of Cloud Egress & Cloud Key Storage (IT Act 2000 & DPDP Act compliance)",
+    "Embedded Rule-Based Clinical Synthesis fallback for zero-downtime offline operation",
+    "Persistent Amber Demo Guardrail Banner across UI ('Demo only: no real patient data')",
+    "Network Audit Compliance: Zero background update polling, zero third-party CDNs or telemetry",
     "In-View Patient Scoping in Copilot Header (General Practice vs PT-XXXX charts)",
     "Dedicated Patient Chart Directory & In-Header Switcher in Artifacts Studio",
     "Real-Time Dynamic Context Synchronization across SQLite, Copilot & Artifacts",
@@ -16,7 +21,6 @@ export function CurrentState() {
     "7-Column Interactive Practice Calendar with priority placement on dashboard",
     "Standalone Consultations & Live Encounters module for clinical dictation",
     "Living Patient Context Artifacts with immutable version history",
-    "Multi-Key Gemini Gateway & Local Offline Ollama setup guides with trade-offs",
     "Clinical Follow-ups Kanban Board for lab orders and recall tracking",
     "Smooth One-Click Setup Installer & Standalone Portable Executable",
     "Hardened GitHub Actions CI/CD with atomic releases and UPX bypass",
@@ -48,7 +52,7 @@ export function CurrentState() {
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-              <span>Shipped &amp; Active (v0.4.0)</span>
+              <span>Shipped &amp; Active (v0.5.0)</span>
             </h3>
             <span className="text-[10px] font-mono font-bold uppercase px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
               Verified In Code
