@@ -41,7 +41,7 @@ export default function Home() {
       {/* Clinical Design System & Ergonomics */}
       <DesignPhilosophy />
 
-      {/* Current Shipped Capabilities (v0.3.0) vs Next Roadmap */}
+      {/* Current Shipped Capabilities (v0.4.0) vs Next Roadmap */}
       <CurrentState />
 
       {/* Closing Download CTA Banner */}

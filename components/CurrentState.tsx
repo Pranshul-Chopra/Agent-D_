@@ -5,17 +5,21 @@ import { RELEASE_HISTORY } from "@/data/releases";
 
 export function CurrentState() {
   const shipped = [
+    "In-View Patient Scoping in Copilot Header (General Practice vs PT-XXXX charts)",
+    "Dedicated Patient Chart Directory & In-Header Switcher in Artifacts Studio",
+    "Real-Time Dynamic Context Synchronization across SQLite, Copilot & Artifacts",
     "Hardware-bound AES-256-GCM Local Vault (%LOCALAPPDATA%\\AgentD\\context.db)",
     "Cryptographic Alias Scrubber replacing legal names with PT-XXXX tokens",
     "Loopback architecture binding strictly to http://127.0.0.1:5050",
     "Doctor-in-Control Proposal Safety Gate with visual diff inspections",
     "Conversational Clinical Copilot with SSE token streaming & slash commands",
-    "7-Column Interactive Practice Calendar with today jump & dot indicators",
+    "7-Column Interactive Practice Calendar with priority placement on dashboard",
     "Standalone Consultations & Live Encounters module for clinical dictation",
     "Living Patient Context Artifacts with immutable version history",
-    "Multi-Key Gemini Inference Gateway with 60s rate-limit cooldown rotation",
+    "Multi-Key Gemini Gateway & Local Offline Ollama setup guides with trade-offs",
     "Clinical Follow-ups Kanban Board for lab orders and recall tracking",
     "Smooth One-Click Setup Installer & Standalone Portable Executable",
+    "Hardened GitHub Actions CI/CD with atomic releases and UPX bypass",
   ];
 
   const upcomingMilestone6 = [
@@ -39,12 +43,12 @@ export function CurrentState() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        {/* Shipped v0.3.0 */}
+        {/* Shipped v0.4.0 */}
         <div className="p-8 rounded-2xl bg-white border border-emerald-200 shadow-sm space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-              <span>Shipped &amp; Active (v0.3.0)</span>
+              <span>Shipped &amp; Active (v0.4.0)</span>
             </h3>
             <span className="text-[10px] font-mono font-bold uppercase px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
               Verified In Code

@@ -88,7 +88,7 @@ Agent-D_LandingPage/
 │   ├── ArchitectureVisual.tsx# Electron 44 + Flask 3 loopback topology
 │   ├── PrivacyCompare.tsx   # Machine Sovereignty vs Cloud SaaS Matrix
 │   ├── DesignPhilosophy.tsx # Ergonomics for 12-hour attending shifts
-│   ├── CurrentState.tsx     # Shipped v0.3.0 reality vs Roadmap Horizon
+│   ├── CurrentState.tsx     # Shipped v0.4.0 reality vs Roadmap Horizon
 │   ├── FinalCTA.tsx         # Primary download call-to-action banner
 │   └── Footer.tsx           # Medical disclaimer, vault path, attribution
 ├── config/
@@ -96,7 +96,7 @@ Agent-D_LandingPage/
 ├── data/
 │   ├── features.ts          # Feature details & clinical metrics
 │   ├── architecture.ts      # Architectural layer definitions
-│   └── releases.ts          # Release changelog history (v0.1.0 to v0.3.0)
+│   └── releases.ts          # Release changelog history (v0.1.0 to v0.4.0)
 ├── public/                  # Static images, icons, and blockmaps
 ├── vercel.json              # Vercel deployment & security headers config
 └── tailwind.config.ts       # Clinical color palette extension

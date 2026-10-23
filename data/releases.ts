@@ -9,14 +9,30 @@ export interface ReleaseLog {
 
 export const RELEASE_HISTORY: ReleaseLog[] = [
   {
+    version: "v0.4.0",
+    codename: "In-View Context Scoping & CI/CD Hardening",
+    date: "October 2026",
+    badge: "CURRENT RELEASE",
+    summary:
+      "Major contextual workflow evolution shifting patient scoping directly into Copilot and Artifacts Studio, real-time dynamic SQLite context synchronization across all modules, and hardened CI/CD release automation.",
+    highlights: [
+      "In-View Patient Scoping: Interactive patient context switcher directly in Copilot header supporting General Practice Copilot and individual charts (PT-XXXX)",
+      "Dedicated Artifacts Studio Directory: Empty-state chart selector grid with instant demographic search and in-header [Switch Chart ▾] dropdown",
+      "Real-Time Dynamic Context Sync: Per-turn SQLite prompt injection in Copilot pulling live artifacts, recent vitals, open tickets, and today's schedule",
+      "Clinical Dashboard Prioritization: Promoted Clinical Calendar & Agenda directly beneath quick metrics, anchoring pre-visit briefs beneath daily schedule",
+      "CI/CD Pipeline Hardening: Zero-timeout GitHub Actions release workflow with offline electron-builder packaging, UPX disabled, and softprops/action-gh-release@v2",
+    ],
+  },
+  {
     version: "v0.3.0",
     codename: "Clinical Doctor Contextual Platform",
     date: "October 2026",
-    badge: "CURRENT RELEASE",
+    badge: "STABLE RELEASE",
     summary:
       "Production-ready deployment featuring a zero-friction one-click setup installer, hardened TypeScript validation across all modules, and dedicated platform landing page.",
     highlights: [
       "Smooth One-Click Setup: silent installation to user space with desktop and start menu shortcuts",
+      "AI Engine Setup Guides: In-app guide for Google AI Studio Gemini API key acquisition and local Ollama setup with side-by-side trade-offs",
       "Strict TypeScript hardening: zero typecheck errors across all clinical components",
       "Dedicated marketing and architectural landing page showcasing verified platform capabilities",
     ],

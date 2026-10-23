@@ -12,17 +12,17 @@ export interface FeatureItem {
 export const CLINICAL_FEATURES: FeatureItem[] = [
   {
     id: "copilot",
-    title: "Conversational Clinical Copilot & Split View",
+    title: "Conversational Clinical Copilot & In-View Scoping",
     badge: "DECISION SUPPORT",
     description:
-      "A dual-pane clinical workbench. On the left, a real-time conversational intelligence agent streams clinical synthesis; on the right, living patient artifacts and practice context stay pinned in view.",
-    highlight: "Real-time SSE streaming with temporal clinic awareness",
+      "A dual-pane clinical workbench. On the left, a real-time conversational intelligence agent streams clinical synthesis; on the right, living patient artifacts and practice context stay pinned in view with in-view chart scoping.",
+    highlight: "Real-time SSE streaming with live dynamic SQLite context injection",
     iconName: "Bot",
     category: "copilot",
     bullets: [
+      "In-view patient context switcher in header: toggle between General Practice and individual charts (PT-XXXX)",
       "Ask natural questions like 'What is on my dashboard today?' or 'Summarize recent HbA1c trends'",
-      "Scoped to active patient context with instantaneous chart switching",
-      "Floating slash (/) command palette with keyboard tabbing for rapid dictation",
+      "Floating slash (/) command palette with keyboard tabbing for rapid dictation (/consultation, /note, /ticket)",
     ],
   },
   {
@@ -72,17 +72,17 @@ export const CLINICAL_FEATURES: FeatureItem[] = [
   },
   {
     id: "artifacts",
-    title: "Patient Context Artifacts & Version Snapshots",
+    title: "Patient Context Artifacts & In-Header Chart Switcher",
     badge: "LIVING CONTEXT",
     description:
       "Replaces static PDF records with living, structured clinical documents per patient: active problems, current medication regimens, watch-for items, and baseline observations.",
-    highlight: "Immutable version history with visual side-by-side diffs",
+    highlight: "Immutable version history with visual side-by-side diffs and quick-switch chart picker",
     iconName: "FileText",
     category: "clinical",
     bullets: [
-      "Structured JSON architecture ensuring clean clinical field separation",
-      "Every physician edit generates an immutable snapshot in artifact_versions",
-      "Side-by-side visual diff comparisons between any two historical versions",
+      "Dedicated empty-state chart directory grid with demographic search and active status badges",
+      "In-header [Switch Chart ▾] dropdown for instantaneous switching between patient artifacts",
+      "Structured JSON architecture ensuring clean clinical field separation and immutable audit versions",
     ],
   },
   {

@@ -6,16 +6,16 @@
 
 export const SITE_CONFIG = {
   // Current Release Info
-  version: "v0.3.0",
-  versionLabel: "v0.3.0 Clinical Contextual Platform",
+  version: "v0.4.0",
+  versionLabel: "v0.4.0 In-View Context & CI/CD Hardened Platform",
   releaseDate: "October 2026",
   platform: "Windows 10 / 11 (x64)",
 
   // Desktop Executables
   setupDownloadUrl:
-    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.3.0/Agent-D-Setup-0.3.0.exe",
+    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.4.0/Agent-D-Setup-0.4.0.exe",
   portableDownloadUrl:
-    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.3.0/Agent-D-Portable-0.3.0.exe",
+    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.4.0/Agent-D-Portable-0.4.0.exe",
 
   // Local Security Architecture Specs
   localVaultPath: "%LOCALAPPDATA%\\AgentD\\context.db",
