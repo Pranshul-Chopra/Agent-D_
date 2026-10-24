@@ -5,6 +5,7 @@ import { RELEASE_HISTORY } from "@/data/releases";
 
 export function CurrentState() {
   const shipped = [
+    "Persistent Demonstration Compliance Banner & First-Launch Acknowledgment Modal (v0.5.1)",
     "100% Deterministic Physician Workstation Architecture (Zero AI, Zero Hallucinations)",
     "Permanent Elimination of Cloud Egress, Cloud Key Vaults & LLM Telemetry (IT Act 2000 & DPDP Act compliance)",
     "Deterministic Rule-Based Clinical Extraction for automated proposal generation from dictation",
@@ -48,7 +49,7 @@ export function CurrentState() {
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-              <span>Shipped &amp; Active (v0.5.0)</span>
+              <span>Shipped &amp; Active (v0.5.1)</span>
             </h3>
             <span className="text-[10px] font-mono font-bold uppercase px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
               Verified In Code

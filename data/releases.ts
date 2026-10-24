@@ -9,10 +9,25 @@ export interface ReleaseLog {
 
 export const RELEASE_HISTORY: ReleaseLog[] = [
   {
+    version: "v0.5.1",
+    codename: "Demo Governance & Patient Guardrails",
+    date: "October 2026",
+    badge: "CURRENT RELEASE",
+    summary:
+      "Introduces mandatory demonstration safety banners and one-time first-launch legal compliance acknowledgments to prevent real patient data entry pending clinic legal review.",
+    highlights: [
+      "Persistent Top Demo Banner: Amber compliance banner pinned across all screens stating 'Demo version: pending legal review. Do not enter real patient information.'",
+      "Legal Reason Subtext: Displays secondary notice: 'Real-patient use will be enabled only after the clinic’s legal review is complete.'",
+      "First-Launch Acknowledgment Dialog: One-time mandatory consent modal with '[ I understand ]' confirmation enforcing invented test patients only",
+      "Client-Side Compliance State: Cleanly persisted via local storage to ensure physician acknowledgment on initial workstation deployment",
+      "Hardened Deterministic Runtime: Continued zero-egress architecture with 100% physician authority and local AES-256-GCM storage",
+    ],
+  },
+  {
     version: "v0.5.0",
     codename: "Pure Deterministic Clinical Workstation",
     date: "October 2026",
-    badge: "CURRENT RELEASE",
+    badge: "PREVIOUS RELEASE",
     summary:
       "Transition to a pure deterministic, privacy-first local clinical desktop workstation. All generative AI models, cloud LLMs, and prompt pipelines are completely removed in favor of 100% physician authority, deterministic rule-based clinical extraction, and hardware-bound AES-256-GCM storage with zero network egress.",
     highlights: [

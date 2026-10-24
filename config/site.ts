@@ -6,16 +6,16 @@
 
 export const SITE_CONFIG = {
   // Current Release Info
-  version: "v0.5.0",
-  versionLabel: "v0.5.0 Deterministic Clinical Desktop Workstation",
+  version: "v0.5.1",
+  versionLabel: "v0.5.1 Deterministic Clinical Desktop Workstation",
   releaseDate: "October 2026",
   platform: "Windows 10 / 11 (x64)",
 
   // Desktop Executables
   setupDownloadUrl:
-    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.5.0/Agent-D-Setup-0.5.0.exe",
+    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.5.1/Agent-D-Setup-0.5.1.exe",
   portableDownloadUrl:
-    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.5.0/Agent-D-Portable-0.5.0.exe",
+    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.5.1/Agent-D-Portable-0.5.1.exe",
 
   // Local Security Architecture Specs
   localVaultPath: "%LOCALAPPDATA%\\AgentD\\context.db",
