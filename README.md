@@ -1,17 +1,24 @@
-# Agent-D — Official Landing Page
+# Agent-D — Practice Workspace Landing Page
 
-> The Conversational-First Clinical Workspace for Attending Physicians.  
-> 100% on-device clinical intelligence powered by a hardware-bound AES-256-GCM vault, doctor-in-the-loop proposal verification, and zero cloud PII leakage.
+> A local-first practice workspace for physicians.  
+> Schedule, consultations, versioned patient context, and follow-ups in one app that runs on your computer.
+
+---
+
+## Overview
+
+This repository hosts the static landing page for Agent-D.
+The page states accurately what Agent-D is today: a local-first practice workspace in a demo state, pending legal review, and documents the product decisions behind the architecture.
 
 ---
 
 ## Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 14 (Static Export)
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS (Agent-D Clinical Light Theme: `#FFFFFF` canvas, `#2563EB` Royal Blue accents)
+- **Styling:** Tailwind CSS (Accessible white and blue palette: `#FFFFFF`, `#F8FAFC`, `#2563EB`, `#EFF6FF`)
 - **Icons:** Lucide React
-- **Deployment Target:** Vercel (Native zero-config support + `vercel.json`)
+- **Deployment:** Vercel (with security headers in `vercel.json`)
 
 ---
 
@@ -33,40 +40,9 @@ Open [http://localhost:3000](http://localhost:3000) to view the landing page.
 
 ```bash
 npm run build
-npm run start
 ```
 
----
-
-## Deploying to Vercel
-
-This repository is pre-configured for Vercel deployment with [`vercel.json`](./vercel.json) (including HTTP security headers, framework configuration, and static caching).
-
-### Option 1: Vercel Dashboard (Recommended)
-
-1. Create a GitHub repository (e.g. `Pranshul-Chopra/Agent-D-Landing`) and push this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: initial Agent-D landing page"
-   git remote add origin https://github.com/Pranshul-Chopra/Agent-D-Landing.git
-   git branch -M main
-   git push -u origin main
-   ```
-2. Go to [vercel.com/new](https://vercel.com/new).
-3. Import the repository.
-4. Framework Preset will auto-detect as **Next.js**.
-5. Click **Deploy**.
-
-### Option 2: Vercel CLI
-
-```bash
-# Deploy preview build
-npx vercel
-
-# Deploy directly to production
-npx vercel --prod
-```
+This compiles a fully static export.
 
 ---
 
@@ -75,29 +51,25 @@ npx vercel --prod
 ```
 Agent-D_LandingPage/
 ├── app/
-│   ├── globals.css          # Agent-D clinical theme & custom scrollbars
-│   ├── layout.tsx           # SEO metadata, title, and favicon links
-│   └── page.tsx             # Assembled landing page sections
+│   ├── globals.css          # Theme styles, system fonts & focus outlines
+│   ├── layout.tsx           # Metadata, document title, and icons
+│   └── page.tsx             # Structured page sections
 ├── components/
-│   ├── Navbar.tsx           # Frosted glass clinical header & download CTA
-│   ├── Hero.tsx             # Value proposition & 5-tab live app mockup
-│   ├── TechMarquee.tsx      # Infinite technology primitives marquee
-│   ├── Philosophy.tsx       # 3 Non-Negotiable Clinical Pillars
-│   ├── CoreFeatures.tsx     # 8 Verified shipped capabilities
-│   ├── UnifiedWorkspace.tsx # 5-step clinical continuity pipeline
-│   ├── ArchitectureVisual.tsx# Electron 44 + Flask 3 loopback topology
-│   ├── PrivacyCompare.tsx   # Machine Sovereignty vs Cloud SaaS Matrix
-│   ├── DesignPhilosophy.tsx # Ergonomics for 12-hour attending shifts
-│   ├── CurrentState.tsx     # Shipped v0.4.0 reality vs Roadmap Horizon
-│   ├── FinalCTA.tsx         # Primary download call-to-action banner
-│   └── Footer.tsx           # Medical disclaimer, vault path, attribution
+│   ├── DemoBanner.tsx       # Sticky demo status banner (DEMO_BANNER flag)
+│   ├── Navbar.tsx           # Header navigation & GitHub link
+│   ├── Hero.tsx             # Value proposition & dashboard screenshot
+│   ├── TheProblem.tsx       # Context loss between visits
+│   ├── WhatItDoes.tsx       # 4 core capability cards with screenshots
+│   ├── VisitFlow.tsx        # 5-step visit workflow
+│   ├── DataHandling.tsx     # Local data handling & limitations
+│   ├── DesignDecisions.tsx  # Product notes on why there is no AI
+│   ├── StatusRoadmap.tsx    # Shipped, in progress, and waiting on
+│   ├── TryTheDemo.tsx       # Demo build evaluation & download button
+│   ├── FAQ.tsx              # Frequently asked questions
+│   └── Footer.tsx           # Links, disclaimer, and copyright
 ├── config/
-│   └── site.ts              # Centralized URLs, version tags, and download links
-├── data/
-│   ├── features.ts          # Feature details & clinical metrics
-│   ├── architecture.ts      # Architectural layer definitions
-│   └── releases.ts          # Release changelog history (v0.1.0 to v0.4.0)
-├── public/                  # Static images, icons, and blockmaps
-├── vercel.json              # Vercel deployment & security headers config
-└── tailwind.config.ts       # Clinical color palette extension
+│   └── site.ts              # Centralized configuration and flags
+├── public/
+│   └── screenshots/         # Vector screenshots with synthetic data
+└── vercel.json              # HTTP security headers (nosniff, frame deny, strict referrer)
 ```

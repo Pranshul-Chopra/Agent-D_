@@ -1,0 +1,43 @@
+<svg width="600" height="380" viewBox="0 0 600 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="380" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- Top bar -->
+  <rect width="600" height="40" rx="12" fill="#FFFFFF"/>
+  <rect y="28" width="600" height="12" fill="#FFFFFF"/>
+  <circle cx="20" cy="20" r="5" fill="#EF4444"/>
+  <circle cx="36" cy="20" r="5" fill="#F59E0B"/>
+  <circle cx="52" cy="20" r="5" fill="#10B981"/>
+  <text x="75" y="24" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Doctor Approval Safety Gate · Suggested Changes</text>
+
+  <g transform="translate(20, 56)">
+    <!-- Explanatory subline -->
+    <text x="0" y="16" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="11">Fixed rules detected 2 suggested updates from consultation notes. Nothing is saved until approved.</text>
+
+    <!-- Suggestion Card 1 -->
+    <rect y="30" width="560" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="16" y="44" width="104" height="20" rx="4" fill="#EFF6FF"/>
+    <text x="68" y="58" fill="#1E40AF" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">MEDICATION UPDATE</text>
+
+    <text x="16" y="82" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Add Telmisartan 40mg once daily to active medications list</text>
+    <text x="16" y="102" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="11">Extracted from encounter note: "Plan: add Telmisartan 40mg QD"</text>
+
+    <rect x="360" y="90" width="84" height="30" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="402" y="109" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Reject</text>
+
+    <rect x="454" y="90" width="90" height="30" rx="6" fill="#2563EB"/>
+    <text x="499" y="109" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Approve</text>
+
+    <!-- Suggestion Card 2 -->
+    <rect y="152" width="560" height="110" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="16" y="166" width="112" height="20" rx="4" fill="#FEF3C7"/>
+    <text x="72" y="180" fill="#92400E" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">FOLLOW-UP TICKET</text>
+
+    <text x="16" y="204" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Create ticket: Annual Renal Function Lab Panel (Due in 3 months)</text>
+    <text x="16" y="224" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="11">Extracted from encounter note: "Order annual renal panel. Recall in 3 months."</text>
+
+    <rect x="360" y="212" width="84" height="30" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="402" y="231" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Reject</text>
+
+    <rect x="454" y="212" width="90" height="30" rx="6" fill="#2563EB"/>
+    <text x="499" y="231" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Approve</text>
+  </g>
+</svg>

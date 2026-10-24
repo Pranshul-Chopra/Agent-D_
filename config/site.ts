@@ -1,37 +1,35 @@
 /**
  * Centralized Configuration Pool for Agent-D Landing Page
  *
- * Update this file when releasing new versions or updating external URLs.
+ * Controlled by a single config flag (DEMO_BANNER = true) that only the owner changes.
  */
 
+export const DEMO_BANNER = true;
+
 export const SITE_CONFIG = {
-  // Current Release Info
-  version: "v0.5.1",
-  versionLabel: "v0.5.1 Deterministic Clinical Desktop Workstation",
+  // Demo Banner Flag
+  demoBanner: DEMO_BANNER,
+  demoBannerText:
+    "Demo build · pending legal review · not for use with real patient information.",
+
+  // Release Info
+  version: "v0.5.0",
+  versionStatusChip: "v0.5.0 · Demo build · synthetic data only",
   releaseDate: "October 2026",
-  platform: "Windows 10 / 11 (x64)",
+  platform: "Windows 10 / 11, 64-bit",
 
-  // Desktop Executables
-  setupDownloadUrl:
-    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.5.1/Agent-D-Setup-0.5.1.exe",
-  portableDownloadUrl:
-    "https://github.com/Pranshul-Chopra/Agent-D/releases/download/v0.5.1/Agent-D-Portable-0.5.1.exe",
-
-  // Local Security Architecture Specs
-  localVaultPath: "%LOCALAPPDATA%\\AgentD\\context.db",
-  loopbackHost: "http://127.0.0.1:5050",
-  encryptionStandard: "AES-256-GCM Hardware-Bound PBKDF2",
+  // Demo Release Asset
+  demoDownloadUrl: "https://github.com/Pranshul-Chopra/Agent-D/releases",
 
   // Repository & Social URLs
   githubRepoUrl: "https://github.com/Pranshul-Chopra/Agent-D",
-  githubReleasesUrl: "https://github.com/Pranshul-Chopra/Agent-D/releases",
   linkedinUrl: "https://www.linkedin.com/in/pranshul-chopra-269789371/",
   email: "pranshulchopra@gmail.com",
 
-  // Metadata & Site Details
+  // Metadata
   siteUrl: "https://agent-d.vercel.app",
   productName: "Agent-D",
-  tagline: "Privacy-First Deterministic Clinical Desktop Workstation for Attending Physicians",
+  tagline: "A local-first practice workspace for physicians.",
   creator: "Pranshul Chopra",
 } as const;
 

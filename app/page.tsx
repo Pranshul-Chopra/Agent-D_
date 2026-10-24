@@ -1,54 +1,56 @@
+import { DemoBanner } from "@/components/DemoBanner";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { TechMarquee } from "@/components/TechMarquee";
-import { Philosophy } from "@/components/Philosophy";
-import { CoreFeatures } from "@/components/CoreFeatures";
-import { UnifiedWorkspace } from "@/components/UnifiedWorkspace";
-import { ArchitectureVisual } from "@/components/ArchitectureVisual";
-import { PrivacyCompare } from "@/components/PrivacyCompare";
-import { DesignPhilosophy } from "@/components/DesignPhilosophy";
-import { CurrentState } from "@/components/CurrentState";
-import { FinalCTA } from "@/components/FinalCTA";
+import { TheProblem } from "@/components/TheProblem";
+import { WhatItDoes } from "@/components/WhatItDoes";
+import { VisitFlow } from "@/components/VisitFlow";
+import { DataHandling } from "@/components/DataHandling";
+import { DesignDecisions } from "@/components/DesignDecisions";
+import { StatusRoadmap } from "@/components/StatusRoadmap";
+import { TryTheDemo } from "@/components/TryTheDemo";
+import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-slate-900 relative">
-      {/* Top Clinical Frosted Navigation Bar */}
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col selection:bg-blue-100 selection:text-blue-900">
+      {/* 2. Global Status Banner: Controlled by DEMO_BANNER flag */}
+      <DemoBanner />
+
+      {/* 3.1 Header */}
       <Navbar />
 
-      {/* Hero Section with Interactive Live App Preview */}
-      <Hero />
+      <main className="flex-1">
+        {/* 3.2 Hero */}
+        <Hero />
 
-      {/* Infinite Architecture & Tech Primitives Marquee */}
-      <TechMarquee />
+        {/* 3.3 The problem */}
+        <TheProblem />
 
-      {/* The 3 Non-Negotiable Clinical Pillars */}
-      <Philosophy />
+        {/* 3.4 What it does */}
+        <WhatItDoes />
 
-      {/* Verified Shipped Capabilities (All 8 Core Modules) */}
-      <CoreFeatures />
+        {/* 3.5 How a visit flows */}
+        <VisitFlow />
 
-      {/* End-to-End Clinical Continuity Pipeline */}
-      <UnifiedWorkspace />
+        {/* 3.6 Data handling */}
+        <DataHandling />
 
-      {/* Workstation Topology & Loopback Architecture Inspector */}
-      <ArchitectureVisual />
+        {/* 3.7 Design decisions */}
+        <DesignDecisions />
 
-      {/* Machine Sovereignty vs Cloud SaaS Matrix */}
-      <PrivacyCompare />
+        {/* 3.8 Status and roadmap */}
+        <StatusRoadmap />
 
-      {/* Clinical Design System & Ergonomics */}
-      <DesignPhilosophy />
+        {/* 3.9 Try the demo */}
+        <TryTheDemo />
 
-      {/* Current Shipped Capabilities (v0.4.0) vs Next Roadmap */}
-      <CurrentState />
+        {/* 3.10 FAQ */}
+        <FAQ />
+      </main>
 
-      {/* Closing Download CTA Banner */}
-      <FinalCTA />
-
-      {/* Comprehensive Medical & Legal Footer */}
+      {/* 3.11 Footer */}
       <Footer />
-    </main>
+    </div>
   );
 }
